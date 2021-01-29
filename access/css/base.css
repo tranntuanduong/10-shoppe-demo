@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+/* Color */
+:root {
+    --primary-color: #fe6132;
+}
+
+:root {
+    --navbar-height: 35px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var( --navbar-height))
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+}
