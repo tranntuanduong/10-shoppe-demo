@@ -1207,13 +1207,13 @@
               }
             }
 
+
             // Middle banner 
             // Gộp chung vào slides của h ??? - chưa làm được
             var currentTranslateMiddle = 0;
             const slidesMiddle = document.getElementsByClassName('middle-banner__slide');
             const maxTransformMiddle = (slidesMiddle.length)*100;
             
-          
             function slideMiddleLeft () { 
                 if (currentTranslateMiddle === 0) {
                     currentTranslateMiddle = -maxTransformMiddle;
@@ -1235,14 +1235,14 @@
             }
          
             window.onload = function() {
-              var button = document.getElementById('next');
-              var buttonMiddle = document.getElementById('middle-banner-next');
-              button.click();
-            //   buttonMiddle.click();
-              setInterval(function(){
+                var button = document.getElementById('next');
+                var buttonMiddle = document.getElementById('middle-banner-next');
                 button.click();
-                // buttonMiddle.click();
-              }, 10000);  // this will make it click again every 1000 miliseconds
+                buttonMiddle.click();
+                setInterval(function(){
+                    button.click();
+                    buttonMiddle.click();
+                }, 10000);  // this will make it click again every 1000 miliseconds
             }
         </script>
     </body>
