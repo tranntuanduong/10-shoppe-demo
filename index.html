@@ -3,11 +3,16 @@
     <head>
         <title>Home</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./access/css/normalize.css">
-        <link rel="stylesheet" href="./access/css/base.css">
-        <link rel="stylesheet" href="./access/css/main.css">
         <link rel="stylesheet" href="./access/font/font-awesome-4.7.0/css/font-awesome.min.css">
-       
+        <link rel="stylesheet" href="./access/css/normalize.css">
+
+        <link rel="stylesheet" href="./access/css/base.css">
+        <link rel="stylesheet" href="./access/css/csses-small.css">
+
+        <link rel="stylesheet" href="./access/css/component/header.css">
+        <link rel="stylesheet" href="./access/css/component/hero.css">
+        <link rel="stylesheet" href="./access/css/component/offer.css">
+        <link rel="stylesheet" href="./access/css/component/item-card.css">
     </head>
 
     <body>
@@ -345,7 +350,7 @@
                     </div>
                     
                     <!-- Offer  -->
-                    <div class="offer-wrap">
+                    <div class="offer-wrap mt-40">
                         <h2 class="offer__title">Flash sales</h2>
                         <div class="grid__row offer">
                             <div class="grid__col grid__col-4-12">
@@ -510,6 +515,666 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Middle banner -->
+                    <div class="middle-banner mt-40">
+                        <div class=" middle-banner__slides">
+                            <div class="middle-banner__slide">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589890140-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="#" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589959200-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-banner__slide">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589890140-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="#" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589959200-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="middle-banner__slide">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589890140-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-6-12">
+                                        <a href="#" class="middle-banner__item">
+                                            <img src="https://img.abaha.vn/photos/resized/600x200/83-1589890586-myphamohui-lgvina.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle-banner__next">
+                            <div class="circle-border middle-banner__next-left" onclick="slideMiddleLeft()">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="circle-border middle-banner__next-right" onclick="slideMiddleRight()" id="middle-banner-next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Product demo  -->
+                    <div class="product-demo mt-40">
+                        <h3 class="demo-name">Sản phẩm mới</h3>
+                        <div class="grid__row">
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-demo mt-40">
+                        <h3 class="demo-name">Sản bán chạy</h3>
+                        <div class="grid__row">
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                            <div class="grid__col grid__col-2-12">
+                                <a href="#" class="item-card">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-10">1.150.000đ</span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offer brand  -->
+                    <div class="offer-wrap mt-40">
+                        <h2 class="offer__title">Ohui</h2>
+                        <div class="grid__row offer--brand ">
+                            <div class="grid__col grid__col-4-12">
+                                <a href="#" class="item-card mt-20">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                        </div>
+                                        <div class="item-card__content-behavior">
+                                            <div class="item-card__content-behavior-heart"> 
+                                                <i class="fa fa-heart active" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="item-card__content-wrap">
+                                                <div class="item-card__content-behavior-rating">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div> 
+                                                <span class="sold-quantity">1 đã bán</span>
+                                            </div> 
+                                        </div>
+                                        <div class="item-card__content-brand">
+                                            <h5 class="item-card__content-brand-item">Ohui</h5>
+                                            <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+    
+                            <div class="grid__col grid__col-8-12">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                   
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-wrap mt-40">
+                        <h2 class="offer__title">Su:m37</h2>
+                        <div class="grid__row offer--brand ">
+                            <div class="grid__col grid__col-4-12">
+                                <a href="#" class="item-card mt-20">
+                                    <div class="item-card__img">
+                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                        </div>
+                                        <div class="item-card__content-behavior">
+                                            <div class="item-card__content-behavior-heart"> 
+                                                <i class="fa fa-heart active" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="item-card__content-wrap">
+                                                <div class="item-card__content-behavior-rating">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div> 
+                                                <span class="sold-quantity">1 đã bán</span>
+                                            </div> 
+                                        </div>
+                                        <div class="item-card__content-brand">
+                                            <h5 class="item-card__content-brand-item">Ohui</h5>
+                                            <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+    
+                            <div class="grid__col grid__col-8-12">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12">
+                                        <a href="#" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                   
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -522,17 +1187,17 @@
             const maxTransform = (slides.length)*100;
             var timer = 0;
           
-            function slideLeft () { 
-              if (currentTranslate === 0) {
-                currentTranslate = -maxTransform;
-              } 
-              currentTranslate += 100;
-              for(var i = 0; i < slides.length; i++) {
-                  slides[i].style.transform = 'translateX('+currentTranslate+'%)';
-              }
+            function slideLeft (className) { 
+                if (currentTranslate === 0) {
+                    currentTranslate = -maxTransform;
+                } 
+                currentTranslate += 100;
+                for(var i = 0; i < slides.length; i++) {
+                    slides[i].style.transform = 'translateX('+currentTranslate+'%)';
+                }
             }
 
-            function slideRight () {
+            function slideRight () {            
               currentTranslate += -100;
               if (currentTranslate === -maxTransform) {
                 currentTranslate = 0;
@@ -541,12 +1206,42 @@
                   slides[i].style.transform = 'translateX('+currentTranslate+'%)';
               }
             }
+
+            // Middle banner 
+            // Gộp chung vào slides của h ??? - chưa làm được
+            var currentTranslateMiddle = 0;
+            const slidesMiddle = document.getElementsByClassName('middle-banner__slide');
+            const maxTransformMiddle = (slidesMiddle.length)*100;
+            
+          
+            function slideMiddleLeft () { 
+                if (currentTranslateMiddle === 0) {
+                    currentTranslateMiddle = -maxTransformMiddle;
+                } 
+                currentTranslateMiddle += 100;
+                for(var i = 0; i < slidesMiddle.length; i++) {
+                    slidesMiddle[i].style.transform = 'translateX('+currentTranslateMiddle+'%)';
+                }
+            }
+
+            function slideMiddleRight () {  
+                currentTranslateMiddle += -100;
+                if (currentTranslateMiddle === -maxTransformMiddle) {
+                    currentTranslateMiddle = 0;
+                } 
+                for(var i = 0; i < slidesMiddle.length; i++) {
+                    slidesMiddle[i].style.transform = 'translateX('+currentTranslateMiddle+'%)';
+                }
+            }
          
             window.onload = function() {
               var button = document.getElementById('next');
+              var buttonMiddle = document.getElementById('middle-banner-next');
               button.click();
+            //   buttonMiddle.click();
               setInterval(function(){
                 button.click();
+                // buttonMiddle.click();
               }, 10000);  // this will make it click again every 1000 miliseconds
             }
         </script>

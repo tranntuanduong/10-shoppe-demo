@@ -1,0 +1,233 @@
+/* Offer  */
+.offer-wrap {
+    
+}
+
+.offer__title {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid #ff9600;
+}
+
+.offer {
+    height: 655px;
+    background-color: #fff;
+    padding: 40px 12px ;
+    margin: 0;
+}
+
+.offer--brand {
+    background-color: #fff;
+    padding: 20px 12px ;
+    margin: 0;
+}
+
+
+.offer__left {
+    /* background-color: #ddd; */
+    height: 100%;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+    
+}
+
+.offer__img {
+    display: block;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.offer__img img {
+    width: 100%;
+    display: block;
+}
+
+.offer__img--sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff9600;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.btn-cart {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #ff9600;
+    font-size: 1.8rem;
+    width: var(--cart-size);
+    height: var(--cart-size);
+    text-align: center;
+    line-height: var(--cart-size);
+    transform: translateX(calc(-100% - 13px));
+    display: none;
+}
+
+@keyframes btnCartAnnimation {
+    from {
+        opacity: 0;
+        transform: translateX(calc(-100% - 13px));
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.offer-item:hover .btn-cart {
+    animation: btnCartAnnimation ease 0.5s forwards;
+    display: block;
+}
+
+.btn-cart:hover {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.offer__content {
+    padding: 15px 0;
+    color: #333333;
+}
+
+.offer__content-name {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+   
+    padding: 10px 0;
+    color: #504f4f;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.offer-item:hover .offer__content-name{
+    color: #ff9600;
+}
+
+
+.offer__content-rating {
+    margin-bottom: 10px;
+}
+
+.offer__content-rating i {
+    font-size: 1.4rem;
+    color: #ffce3d;
+}
+
+.offer__content-price {
+    margin-bottom: 10px;
+}
+
+.offer__content-current-price {
+    font-size: 1.6rem;
+    margin-right: 15px;
+    color: #333333;
+}
+
+.offer__content-old-price {
+    font-size: 1.2rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.offer__content-merchandise {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.offer__content-stocking span {
+    color: #ff9600;
+    font-weight: 600;
+}
+
+.offer__content-sold span {
+    font-weight: 600;
+}
+
+.offer__content-ranger {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    margin-bottom: 10px;
+}
+
+.offer__content-value {
+    height: 10px;
+    width: var(--ranger-value);
+    border-radius: 5px;
+    background-color: #ff9600;
+}
+
+.offer__content-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.offer__content-time-countdown {
+    display: flex;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item + .countdown-item {
+    margin-left: 8px;
+}
+
+.countdown-item__value {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.countdown-item__title {
+    font-size: 1.2rem;
+}
+/* right */
+
+.offer__right {
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer__right-item + .offer__right-item {
+    padding-top: 20px;
+}
+
+.offer__right-item {
+    height: 46%;
+    width: 100%;
+}
+
+.offer__right-item + .offer__right-item {
+    border-top: 1px solid #eee;
+
+}
