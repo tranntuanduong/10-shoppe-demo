@@ -82,23 +82,37 @@ html {
     width: 83.33333%
 }
 
-.mt-40 {
-    margin-top: 40px;
-}
-
-.ml-15 {
-    margin-left: 15px;
+.ml-8 {
+    margin-left: 8px;
 }
 
 .ml-10 {
     margin-left: 10px;
 }
 
+.ml-15 {
+    margin-left: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
 
+.pr-0 {
+    padding-right: 0;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mb-30 {
+    padding-bottom: 30px;
+}
 
 @keyframes fadeIn {
     from {

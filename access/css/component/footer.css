@@ -8,7 +8,11 @@
     padding: 0 15px 15px 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.wrap-content {
+    width: 25%;
 }
 
 .wrap-content__name {

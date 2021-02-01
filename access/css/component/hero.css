@@ -2,7 +2,7 @@
 .hero {
     position: relative;
     padding-top: 20px;
-
+    /* background-color: #fff; */
 }
 
 /* Thieu case overflow y  */
@@ -13,7 +13,10 @@
     height: 100%;
     padding: 20px 15px;
     /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); */
-    
+}
+
+.hero__categories--tablet {
+    display: none;
 }
 
 .hero__categories-heading {
@@ -54,7 +57,7 @@
 
 .hero__categories-suv-item {
     position: absolute;
-    right: calc(-100% - 2px);
+    right: -162px;
     top: 0;
     list-style-type: none;
     background-color: #fff;
@@ -98,50 +101,85 @@
 /* Hero banner */
 
 .hero__banner {
-    display: flex;
+    /* display: flex; */
     height: 100%;
-  
+    width: 100%;
 }
 
 .hero__banner-carosel {
-    margin-right: 10px;
-    width: 66.66667%;
+    /* width: 66.66667%; */
+    padding-left: 0;
+    padding-right: 0;
     overflow: hidden;
+
 }
 
 .hero__banner-carosel-slides {
-    width: 500%;
+    width: 1000%;
     height: 100%;
     display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow: hidden;
 } 
 
-.hero__banner-carosel-slide {
+#hero__banner-carosel--tablet {
+    display: none;
     width: 20%;
-    transition: 0.5s;
-    
+}
+
+#hero__banner-carosel--tablet .hero__banner-carosel-slide {
+    width: 50%;
+}
+
+.hero__banner-carosel-slide {
+    width: 10%;
+    transition: 0.5s; 
 }
 
 .hero__banner-carosel-slide img {
     width: 100%;
-    height: 100%;
+    padding: 0 1px;
 }
 
-.hero__banner-carosel-btn {
+/* .hero__banner-carosel-btn {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
-    margin-top: -33.33333%;
     z-index: 1;
+    top:50%;
+} */
+
+.hero__banner-carosel-btn-left:hover,
+.hero__banner-carosel-btn-right:hover  {
+    cursor: pointer;
+    box-shadow: 0 2px 5px 4px rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
 }
 
 
-.hero__banner-carosel-btn-item {
+.hero__banner-carosel-btn-left,
+.hero__banner-carosel-btn-right {
     background-color: #9b9999;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     text-align: center;
+    line-height: 25px;
     z-index: 2;
+    position: absolute;
+    top: 50%;
+    color: #fff;
 }
+
+
+.hero__banner-carosel-btn-right {
+    right: 29.2%;
+}
+
+.hero__banner-carosel-btn-left {
+    left: 17.5%;
+}
+
 
 .hero__banner-carosel-btn-item:hover {
     cursor: pointer;
@@ -161,11 +199,12 @@
 .hero__banner-carosel-slides a img {
     width: 100%;
     height: 100%;
-    padding: 0 1px;
+    
 }
 
 .hero__banner-fixed {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -175,12 +214,15 @@
 
 .hero__banner-fixed-primary {
     height: 50%;
+    width: 100%;
+    
 }
 
 .hero__banner-fixed-primary img {
-    width: 100%;
+    width: 100%; 
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .hero__banner-fixed-primary + .hero__banner-fixed-primary {

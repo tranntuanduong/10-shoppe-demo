@@ -3,6 +3,7 @@
     <head>
         <title>Home</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./access/font/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./access/css/normalize.css">
 
@@ -14,6 +15,8 @@
         <link rel="stylesheet" href="./access/css/component/offer.css">
         <link rel="stylesheet" href="./access/css/component/item-card.css">
         <link rel="stylesheet" href="./access/css/component/footer.css">
+
+        <link rel="stylesheet" href="./access/css/responsive.css">
     </head>
 
     <body>
@@ -23,7 +26,7 @@
                 <div class="grid">
                     <div class="navbar">
                         <ul class="navbar__list">
-                            <li class="navbar__item navbar__item--has-qr item--saperate">
+                            <li class="navbar__item nav--mobile-hidden navbar__item--has-qr item--saperate">
                                 Vào cửa hàng trên ứng dụng MyOhui
                                 <div class="header__qr">
                                     <img class="header__qr-code" src="./access/img/qr_code.png" alt="">
@@ -43,7 +46,7 @@
                                 <a class="navbar__item-link" href="">ohuivina.com@gmail.com</a>
                             </li>
                         </ul>
-                        <ul class="navbar__list">
+                        <ul class="navbar__list nav--mobile-hidden">
                             <li class="navbar__item navbar__item--has-notify">
                                 <i class="fa fa-bell" aria-hidden="true"></i>
                                 <a class="navbar__item-link" href="">Tin tức</a>
@@ -154,9 +157,10 @@
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </div>
                         </div>
+
                         <div class="header-with-search__cart">
-                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                            <span class="header-with-search__quantity">3</span>
+                            <i class="header-with-search__cart-cart fa fa-cart-plus" aria-hidden="true"></i>
+                            <span class="header-with-search__quantity">3</span>         
                             <!-- NO cart -->
                             <!-- <div class="cart__content cart__content--no-cart">
                                 <img src="./access/img/no-cart.png" alt="">
@@ -237,6 +241,8 @@
 
                             </div>
                         </div>
+                        <img class="header-with-search__avatar--mobile" src="http://demo.shop.tickid.vn/assets/images/avatar-default.png" alt="">
+
                     </div>
                 </div>
             </header>
@@ -244,108 +250,142 @@
             <div class="container">
                 <div class="grid">
                     <!-- Hero  -->
-                    <div class="grid__row hero">
-                        <div class="grid__col grid__col-2-12">
-                            <div class="hero__categories">
-                                <h3 class="hero__categories-heading">Danh mục</h3>
-                                <ul class="hero__categories--list">
-                                    <li class="hero__categories-item"><a href="">Tất Cả Sản Phẩm</a></li>
-                                   
-                                    <li class="hero__categories-item">
-                                        <a href="">Whoo</a>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <ul class="hero__categories-suv-item">
-                                            <li><a href="#">Whoo bitchip </a></li>
-                                            <li><a href="#">Ohui Dưỡng Trắng</a></li>
-                                            <li><a href="#">Ohui Prime Advancer</a></li>
-                                        </ul>
-                                    </li>
-
-                                    </li>
-                                    <li class="hero__categories-item">
-                                        <a href="">Su:m37</a>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <ul class="hero__categories-suv-item">
-                                            <li><a href="#">Whoo bitchip </a></li>   
-                                            <li><a href="#">Ohui Prime Advancer</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hero__categories-item">
-                                        <a href="">Set mini</a>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <ul class="hero__categories-suv-item">
-                                            <li><a href="#">Whoo bitchip </a></li>
-                                            <li><a href="#">Ohui Dưỡng Trắng</a></li>
-                                            <li><a href="#">Ohui Prime Advancer</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hero__categories-item">
-                                        <a href="">Ohui</a>
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        <ul class="hero__categories-suv-item">
-                                            <li><a href="#">Whoo bitchip </a></li>
-                                            <li><a href="#">Ohui Dưỡng Trắng</a></li>
-                                            <li><a href="#">Ohui Prime Advancer</a></li>
-                                            <li><a href="#">Whoo bitchip </a></li>
-                                            <li><a href="#">Ohui Dưỡng Trắng</a></li>
-                                            <li><a href="#">Ohui Prime Advancer</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hero__categories-item"><a href="">Thực Phẩm Chức Năng</a></li>  
-                                    <li class="hero__categories-item"><a href="">Dịch vụ</a></li>                                                    
-                                </ul>
+                    <div class="hero">
+                        <div class="grid__row mr-0">
+                            <div class="grid__col grid__col-2-12 hero__categories--mobile-hidden">
+                                <div class="hero__categories">
+                                    <h3 class="hero__categories-heading">Danh mục</h3>
+                                    <ul class="hero__categories--list">
+                                        <li class="hero__categories-item"><a href="">Tất Cả Sản Phẩm</a></li>
+                                       
+                                        <li class="hero__categories-item">
+                                            <a href="">Whoo</a>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            <ul class="hero__categories-suv-item">
+                                                <li><a href="#">Whoo bitchip </a></li>
+                                                <li><a href="#">Ohui Dưỡng Trắng</a></li>
+                                                <li><a href="#">Ohui Prime Advancer</a></li>
+                                            </ul>
+                                        </li>
+    
+                                        </li>
+                                        <li class="hero__categories-item">
+                                            <a href="">Su:m37</a>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            <ul class="hero__categories-suv-item">
+                                                <li><a href="#">Whoo bitchip </a></li>   
+                                                <li><a href="#">Ohui Prime Advancer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hero__categories-item">
+                                            <a href="">Set mini</a>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            <ul class="hero__categories-suv-item">
+                                                <li><a href="#">Whoo bitchip </a></li>
+                                                <li><a href="#">Ohui Dưỡng Trắng</a></li>
+                                                <li><a href="#">Ohui Prime Advancer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hero__categories-item">
+                                            <a href="">Ohui</a>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            <ul class="hero__categories-suv-item">
+                                                <li><a href="#">Whoo bitchip </a></li>
+                                                <li><a href="#">Ohui Dưỡng Trắng</a></li>
+                                                <li><a href="#">Ohui Prime Advancer</a></li>
+                                                <li><a href="#">Whoo bitchip </a></li>
+                                                <li><a href="#">Ohui Dưỡng Trắng</a></li>
+                                                <li><a href="#">Ohui Prime Advancer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="hero__categories-item"><a href="">Thực Phẩm Chức Năng</a></li>  
+                                        <li class="hero__categories-item"><a href="">Dịch vụ</a></li>                                                    
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="grid__col grid__col-10-12">
-                            <div class="hero__banner">
-                                <div class="hero__banner-carosel">
-                                    <div class="hero__banner-carosel-slides">
-                                      <div class="hero__banner-carosel-slide">
-                                        <a href="#" >
-                                          <img src="https://img.abaha.vn/photos/resized/850x500/83-1611316086-myphamohui-lgvina.png" alt="">
-                                        </a>              
-                                      </div> 
-                                      <div class="hero__banner-carosel-slide">
-                                        <a href="#" >
-                                          <img src="https://img.abaha.vn/photos/resized/850x500/83-1589963137-myphamohui-lgvina.png" alt="">
-                                        </a>              
-                                      </div>
-                                      <div class="hero__banner-carosel-slide">
-                                        <a href="#" >
-                                          <img src="https://img.abaha.vn/photos/resized/850x500/83-1589892101-myphamohui-lgvina.png" alt="">
-                                        </a>              
-                                      </div>  
-                                      <div class="hero__banner-carosel-slide">
-                                        <a href="#" >
-                                          <img src="https://img.abaha.vn/photos/resized/850x500/83-1589893860-myphamohui-lgvina.png" alt="">
-                                        </a>              
-                                      </div>  
-                                      <div class="hero__banner-carosel-slide">
-                                        <a href="#" >
-                                          <img src="https://img.abaha.vn/photos/resized/850x500/83-1589888743-myphamohui-lgvina.png" alt="">
-                                        </a>              
-                                      </div>                                     
+                            <div class="grid__col grid__col-10-12 s-grid__col-12-12  pr-0">
+                                <div class="grid__row hero__banner  s-ml--minus-3 ">
+                                    <div class="grid__col grid__col-8-12 m-grid__col-12-12 s-grid__col-12-12 hero__banner-carosel">
+                                        <div class="hero__banner-carosel-slides">                                
+                                            <div class="hero__banner-carosel-slide">
+                                                <a href="#" >
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1611316086-myphamohui-lgvina.png" alt="">
+                                                </a>              
+                                            </div> 
+                                            <div class="hero__banner-carosel-slide">
+                                                <a href="#" >
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1589963137-myphamohui-lgvina.png" alt="">
+                                                </a>              
+                                            </div>
+                                            <div class="hero__banner-carosel-slide">
+                                                <a href="#" >
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1589892101-myphamohui-lgvina.png" alt="">
+                                                </a>              
+                                            </div>  
+                                             
+                                            <div class="hero__banner-carosel-slide">
+                                                <a href="#" >
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1589893860-myphamohui-lgvina.png" alt="">
+                                                </a>              
+                                            </div>  
+                                            
+                                            <div class="hero__banner-carosel-slide">
+                                                <a href="#" >
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1589888743-myphamohui-lgvina.png" alt="">
+                                                </a>              
+                                            </div>   
+                                            <div id="hero__banner-carosel--tablet">
+                                                <div class="hero__banner-carosel-slide">
+                                                    <a href="#" >
+                                                        <img src="https://img.abaha.vn/photos/resized/850x500/83-1595846917-myphamohui-lgvina.png" alt="">
+                                                    </a>              
+                                                </div>  
+                                                <div class="hero__banner-carosel-slide hero__banner-carosel--tablet">
+                                                    <a href="#" >
+                                                        <img src="https://img.abaha.vn/photos/resized/850x500/83-1611422597-myphamohui-lgvina.png" alt="">
+                                                    </a>              
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="hero__banner-carosel-btn">
+                                            <div class="hero__banner-carosel-btn-left" onclick="slideLeft()">
+                                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="hero__banner-carosel-btn-right" onclick="slideRight()"id="next">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- hero__banner-fixed-primary  -->
+                                    <div class="grid__col grid__col-4-12 pr-0 ">
+                                        <div class="hero__banner-fixed ml-8">
+                                            <div class="hero__banner-fixed-primary">
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1595846917-myphamohui-lgvina.png" alt="">
+                                            </div>
+                                            <div class="hero__banner-fixed-primary">
+                                                <img src="https://img.abaha.vn/photos/resized/850x500/83-1611422597-myphamohui-lgvina.png" alt="">
+                                           </div> 
+                                        </div>
                                     </div>
                                     
-
-                                    <div class="hero__banner-carosel-btn">
-                                        <div class="hero__banner-carosel-btn-item" onclick="slideLeft()">
-                                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="hero__banner-carosel-btn-item" onclick="slideRight()"id="next">
-                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!-- hero__banner-fixed-primary  -->
-                                <div class="hero__banner-fixed">
-                                    <div class="hero__banner-fixed-primary">
-                                        <img src="https://img.abaha.vn/photos/resized/850x500/83-1595846917-myphamohui-lgvina.png" alt="">
-                                    </div>
-                                    <div class="hero__banner-fixed-primary">
-                                        <img src="https://img.abaha.vn/photos/resized/850x500/83-1611422597-myphamohui-lgvina.png" alt="">
-                                   </div> 
-                                </div>
+                            </div>
+                            <div class="hero__categories--tablet mt-40">
+                                <a href="#" class="hero__categories--tablet-filter">Ohui</a>
+                                <a href="#" class="hero__categories--tablet-filter">Whoo</a>
+                                <a href="#" class="hero__categories--tablet-filter">Su:m37</a>
+                                <a href="#" class="hero__categories--tablet-filter">Set mini</a>
+                                <a href="#" class="hero__categories--tablet-filter">Thực phẩm chức năng</a>
+                                <a href="#" class="hero__categories--tablet-filter">Dịch vụ</a>
+                                <a href="#" class="hero__categories--tablet-filter">Set mini</a>
+                                <a href="#" class="hero__categories--tablet-filter">Thực phẩm chức năng</a>
+                                <a href="#" class="hero__categories--tablet-filter">Dịch vụ</a>
+                                <a href="#" class="hero__categories--tablet-filter">Set mini</a>
+                                <a href="#" class="hero__categories--tablet-filter">Thực phẩm chức năng</a>
+                                <a href="#" class="hero__categories--tablet-filter">Dịch vụ</a>
+                                <a href="#" class="hero__categories--tablet-filter">Set mini</a>
+                               
                             </div>
                         </div>
                     </div>
@@ -354,57 +394,65 @@
                     <div class="offer-wrap mt-40">
                         <h2 class="offer__title">Flash sales</h2>
                         <div class="grid__row offer">
-                            <div class="grid__col grid__col-4-12">
+                            <div class="grid__col grid__col-4-12 s-grid__col-12-12">
                                 <div class="offer__left offer-item">
-                                    <a href="#" class="offer__img">
-                                        <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt=""> 
-                                        <span class="offer__img--sale">-44%</span>
-                                        <div class="btn-cart">
-                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                        </div>
-                                    </a>
-                                    <div class="offer__content">
-                                        <a href="#" class="offer__content-name">Set tái sinh Su:M37 Losec Summa 5 món</a>
-                                        <div class="offer__content-rating">
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="offer__content-price">
-                                            <span class="offer__content-current-price">850.000đ</span>
-                                            <span class="offer__content-old-price">1.500.000đ</span>
-                                        </div>
-                                        <div class="offer__content-merchandise">
-                                            <p class="offer__content-stocking">Còn lại:<span>80</span></p>
-                                            <p class="offer__content-sold">Đã bán:<span>120</span></p>
-                                        </div>
-                                        <div class="offer__content-ranger">
-                                            <div class="offer__content-value" style="--ranger-value: 60%"></div>
-                                        </div>
-                                        <div class="offer__content-time">
-                                            <p class="offer__content-time-text">Thời gian còn lại:</p>
-                                            <div class="offer__content-time-countdown">
-                                                <div class="countdown-item">
-                                                    <div class="countdown-item__value">2</div>
-                                                    <div class="countdown-item__title">Ngày</div>
+                                    <div class="grid__row">
+                                        <div class="grid__col grid__col-4-12">
+                                            <a href="#" class="offer__img">
+                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt=""> 
+                                                <span class="offer__img--sale">-44%</span>
+                                                <div class="btn-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                                 </div>
-                                                <div class="countdown-item">
-                                                    <div class="countdown-item__value">6</div>
-                                                    <div class="countdown-item__title">Giờ</div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__col grid__col-8-12">
+                                            <div class="offer__content">
+                                                <a href="#" class="offer__content-name">Set tái sinh Su:M37 Losec Summa 5 món</a>
+                                                <div class="offer__content-rating">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                                 </div>
-                                                <div class="countdown-item">
-                                                    <div class="countdown-item__value">25</div>
-                                                    <div class="countdown-item__title">Phút</div>
+                                                <div class="offer__content-price">
+                                                    <span class="offer__content-current-price">850.000đ</span>
+                                                    <span class="offer__content-old-price">1.500.000đ</span>
+                                                </div>
+                                                <div class="offer__content-merchandise">
+                                                    <p class="offer__content-stocking">Còn lại:<span>80</span></p>
+                                                    <p class="offer__content-sold">Đã bán:<span>120</span></p>
+                                                </div>
+                                                <div class="offer__content-ranger">
+                                                    <div class="offer__content-value" style="--ranger-value: 60%"></div>
+                                                </div>
+                                                <div class="offer__content-time">
+                                                    <p class="offer__content-time-text">Thời gian còn lại:</p>
+                                                    <div class="offer__content-time-countdown">
+                                                        <div class="countdown-item">
+                                                            <div class="countdown-item__value">2</div>
+                                                            <div class="countdown-item__title">Ngày</div>
+                                                        </div>
+                                                        <div class="countdown-item">
+                                                            <div class="countdown-item__value">6</div>
+                                                            <div class="countdown-item__title">Giờ</div>
+                                                        </div>
+                                                        <div class="countdown-item">
+                                                            <div class="countdown-item__value">25</div>
+                                                            <div class="countdown-item__title">Phút</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                   
                                 </div>
                             </div>
     
-                            <div class="grid__col grid__col-8-12">
+                            <div class="grid__col grid__col-8-12 s-grid__col-12-12">
                                <div class="offer__right">
                                     <div class="offer__right-item offer-item">
                                         <div class="grid__row">
@@ -418,7 +466,7 @@
                                                 </a>
                                             </div>
                                             <div class="grid__col grid__col-8-12">
-                                                <div class="offer__content">
+                                                <div class="offer__content mb-30">
                                                     <a href="#2" class="offer__content-name">Bộ cấp Nước Se Khít Lỗ Chân Lông Sum37 Water-full Set 5p</a>
                                                     <div class="offer__content-rating">
                                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -578,7 +626,7 @@
                     <div class="product-demo mt-40">
                         <h3 class="demo-name">Sản phẩm mới</h3>
                         <div class="grid__row">
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-1.png" alt="">
@@ -592,7 +640,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-2.png" alt="">
@@ -606,7 +654,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-3.png" alt="">
@@ -620,7 +668,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-4.png" alt="">
@@ -634,7 +682,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-5.png" alt="">
@@ -648,7 +696,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-6.png" alt="">
@@ -668,7 +716,7 @@
                     <div class="product-demo mt-40">
                         <h3 class="demo-name">Sản bán chạy</h3>
                         <div class="grid__row">
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-7.png" alt="">
@@ -682,7 +730,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-8.png" alt="">
@@ -696,7 +744,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-9.png" alt="">
@@ -710,7 +758,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-13.png" alt="">
@@ -724,7 +772,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-11.png" alt="">
@@ -738,7 +786,7 @@
                                     </div>  
                                 </a>
                             </div>
-                            <div class="grid__col grid__col-2-12">
+                            <div class="grid__col grid__col-2-12 m-grid__col-4-12 s-grid__col-4-12">
                                 <a href="#" class="item-card">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-12.png" alt="">
@@ -759,7 +807,7 @@
                     <div class="offer-wrap mt-40">
                         <h2 class="offer__title">Ohui</h2>
                         <div class="grid__row offer--brand ">
-                            <div class="grid__col grid__col-4-12">
+                            <div class="grid__col grid__col-4-12 s-grid__col-12-12">
                                 <a href="#" id="item-cart__1" class="item-card mt-20">
                                     <div class="item-card__img">
                                         <img src="./access/img/product-8.png" alt="">
@@ -802,9 +850,9 @@
                                 </a>
                             </div>
     
-                            <div class="grid__col grid__col-8-12">
+                            <div class="grid__col grid__col-8-12 s-grid__col-12-12">
                                 <div class="grid__row">
-                                    <div class="grid__col grid__col-4-12">
+                                    <div class="grid__col grid__col-4-12  s-grid__col-6-12">
                                         <a href="#" id="item-cart__2" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-11.png" alt="">
@@ -846,7 +894,7 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
                                         <a href="#" id="item-cart__3" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-11.png" alt="">
@@ -888,7 +936,7 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
                                         <a href="#" id="item-cart__4" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-17.png" alt="">
@@ -931,7 +979,7 @@
                                         </a>
                                     </div>
                                     
-                                    <div class="grid__col grid__col-4-12">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
                                         <a href="#" id="item-cart__5" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-18.png" alt="">
@@ -973,7 +1021,271 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__6" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="./access/img/product-19.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                                <span class="item-card__discount">
+                                                    <div class="item-card__discount-quantity">50%</div>
+                                                    <div class="item-card__discount-text">Giảm</div>
+                                                </span>
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__6')">
+                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span class="item-card__cart-underline"></span>
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                   
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-wrap mt-40">
+                        <h2 class="offer__title">Whoo</h2>
+                        <div class="grid__row offer--brand ">
+                            <div class="grid__col grid__col-4-12 s-grid__col-12-12">
+                                <a href="#" id="item-cart__1" class="item-card mt-20">
+                                    <div class="item-card__img">
+                                        <img src="./access/img/product-8.png" alt="">
+                                    </div>
+                                    <div class="item-card__content">
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                        <div class="item-card__content-price">
+                                            <span class="item-card__content-price-old">1.500.000đ</span>
+                                            <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                        </div>
+                                        <div class="item-card__content-behavior">
+                                            <div class="item-card__content-behavior-heart"> 
+                                                <i class="fa fa-heart active" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="item-card__content-wrap">
+                                                <div class="item-card__content-behavior-rating">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div> 
+                                                <span class="sold-quantity">1 đã bán</span>
+                                            </div> 
+                                        </div>
+                                        <div class="item-card__content-brand">
+                                            <h5 class="item-card__content-brand-item">Ohui</h5>
+                                            <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                        </div>
+                                        <span class="item-card__discount">
+                                            <div class="item-card__discount-quantity">50%</div>
+                                            <div class="item-card__discount-text">Giảm</div>
+                                        </span>
+                                        <div class="item-card__cart" onclick="purchaseMessage('item-cart__1')">
+                                            <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span class="item-card__cart-underline"></span>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>
+    
+                            <div class="grid__col grid__col-8-12 s-grid__col-12-12">
+                                <div class="grid__row">
+                                    <div class="grid__col grid__col-4-12  s-grid__col-6-12">
+                                        <a href="#" id="item-cart__2" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="./access/img/product-11.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                                <span class="item-card__discount">
+                                                    <div class="item-card__discount-quantity">50%</div>
+                                                    <div class="item-card__discount-text">Giảm</div>
+                                                </span>
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__2')">
+                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span class="item-card__cart-underline"></span>
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__3" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="./access/img/product-11.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                                <span class="item-card__discount">
+                                                    <div class="item-card__discount-quantity">50%</div>
+                                                    <div class="item-card__discount-text">Giảm</div>
+                                                </span>
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__3')">
+                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span class="item-card__cart-underline"></span>
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__4" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="./access/img/product-17.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                                <span class="item-card__discount">
+                                                    <div class="item-card__discount-quantity">50%</div>
+                                                    <div class="item-card__discount-text">Giảm</div>
+                                                </span>
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__4')">
+                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span class="item-card__cart-underline"></span>
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__5" class="item-card mt-20">
+                                            <div class="item-card__img">
+                                                <img src="./access/img/product-18.png" alt="">
+                                            </div>
+                                            <div class="item-card__content">
+                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
+                                                <div class="item-card__content-price">
+                                                    <span class="item-card__content-price-old">1.500.000đ</span>
+                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
+                                                </div>
+                                                <div class="item-card__content-behavior">
+                                                    <div class="item-card__content-behavior-heart"> 
+                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="item-card__content-wrap">
+                                                        <div class="item-card__content-behavior-rating">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div> 
+                                                        <span class="sold-quantity">1 đã bán</span>
+                                                    </div> 
+                                                </div>
+                                                <div class="item-card__content-brand">
+                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
+                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
+                                                </div>
+                                                <span class="item-card__discount">
+                                                    <div class="item-card__discount-quantity">50%</div>
+                                                    <div class="item-card__discount-text">Giảm</div>
+                                                </span>
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__5')">
+                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span class="item-card__cart-underline"></span>
+                                                </div>
+                                            </div>  
+                                        </a>
+                                    </div>
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
                                         <a href="#" id="item-cart__6" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-19.png" alt="">
@@ -1023,13 +1335,13 @@
                     <div class="offer-wrap mt-40">
                         <h2 class="offer__title">Su:m37</h2>
                         <div class="grid__row offer--brand ">
-                            <div class="grid__col grid__col-4-12">
-                                <a href="#" id="item-cart__7" class="item-card mt-20">
+                            <div class="grid__col grid__col-4-12 s-grid__col-12-12">
+                                <a href="#" id="item-cart__1" class="item-card mt-20">
                                     <div class="item-card__img">
-                                        <img src="./access/img/product-1.png" alt="">
+                                        <img src="./access/img/product-8.png" alt="">
                                     </div>
                                     <div class="item-card__content">
-                                        <div class="item-card__content-name">Set Son lì Whoo Velvet Lip Rouge dòng Hoàng Cung Màu đỏ cam Set Son lì Whoo Velvet Lip Rouge dòng Hoàng Cung Màu đỏ cam</div>
+                                        <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
                                         <div class="item-card__content-price">
                                             <span class="item-card__content-price-old">1.500.000đ</span>
                                             <span class="item-card__content-price-new ml-15">1.150.000đ</span>
@@ -1057,7 +1369,7 @@
                                             <div class="item-card__discount-quantity">50%</div>
                                             <div class="item-card__discount-text">Giảm</div>
                                         </span>
-                                        <div class="item-card__cart" onclick="purchaseMessage('item-cart__7')">
+                                        <div class="item-card__cart" onclick="purchaseMessage('item-cart__1')">
                                             <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                             <span class="item-card__cart-underline"></span>
@@ -1066,191 +1378,10 @@
                                 </a>
                             </div>
     
-                            <div class="grid__col grid__col-8-12">
-                                <div class="grid__row">                                 
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__8" class="item-card mt-20">
-                                            <div class="item-card__img">
-                                                <img src="./access/img/product-4.png" alt="">
-                                            </div>
-                                            <div class="item-card__content">
-                                                <div class="item-card__content-name">Set Phấn Nước Whoo Gong Set Son lì Whoo Velvet Lip Rouge dòng Hoàng Cung Màu đỏ cam</div>
-                                                <div class="item-card__content-price">
-                                                    <span class="item-card__content-price-old">1.500.000đ</span>
-                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
-                                                </div>
-                                                <div class="item-card__content-behavior">
-                                                    <div class="item-card__content-behavior-heart"> 
-                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="item-card__content-wrap">
-                                                        <div class="item-card__content-behavior-rating">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                        </div> 
-                                                        <span class="sold-quantity">1 đã bán</span>
-                                                    </div> 
-                                                </div>
-                                                <div class="item-card__content-brand">
-                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
-                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__8')">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>           
-                                            </div>  
-                                        </a>
-                                    </div>
-                                    
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__9" class="item-card mt-20">
-                                            <div class="item-card__img">
-                                                <img src="./access/img/product-5.png" alt="">
-                                            </div>
-                                            <div class="item-card__content">
-                                                <div class="item-card__content-name">Set Son lì Whoo Velvet Lip Rouge dòng Hoàng Cung Màu đỏ cam</div>
-                                                <div class="item-card__content-price">
-                                                    <span class="item-card__content-price-old">1.500.000đ</span>
-                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
-                                                </div>
-                                                <div class="item-card__content-behavior">
-                                                    <div class="item-card__content-behavior-heart"> 
-                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="item-card__content-wrap">
-                                                        <div class="item-card__content-behavior-rating">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                        </div> 
-                                                        <span class="sold-quantity">1 đã bán</span>
-                                                    </div> 
-                                                </div>
-                                                <div class="item-card__content-brand">
-                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
-                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__9')">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                            </div>  
-                                        </a>
-                                    </div>
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__10" class="item-card mt-20">
-                                            <div class="item-card__img">
-                                                <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="">
-                                            </div>
-                                            <div class="item-card__content">
-                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
-                                                <div class="item-card__content-price">
-                                                    <span class="item-card__content-price-old">1.500.000đ</span>
-                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
-                                                </div>
-                                                <div class="item-card__content-behavior">
-                                                    <div class="item-card__content-behavior-heart"> 
-                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="item-card__content-wrap">
-                                                        <div class="item-card__content-behavior-rating">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                        </div> 
-                                                        <span class="sold-quantity">1 đã bán</span>
-                                                    </div> 
-                                                </div>
-                                                <div class="item-card__content-brand">
-                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
-                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__10')">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                            </div>  
-                                        </a>
-                                    </div>
-                                   
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offer-wrap mt-40">
-                        <h2 class="offer__title">Whoo</h2>
-                        <div class="grid__row offer--brand ">
-                            <div class="grid__col grid__col-4-12">
-                                <a href="#" id="item-card__11" class="item-card item-card--discount item-card--has-cart mt-20">
-                                    <div class="item-card__img">
-                                        <img src="./access/img/product-8.png" alt="">
-                                    </div>
-                                    <div class="item-card__content">
-                                        <div class="item-card__content-name">Set Phấn Nước Whoo (prevent click)</div>
-                                        <div class="item-card__content-price">
-                                            <span class="item-card__content-price-old">1.500.000đ</span>
-                                            <span class="item-card__content-price-new ml-15">1.150.000đ</span>
-                                        </div>
-                                        <div class="item-card__content-behavior">
-                                            <div class="item-card__content-behavior-heart"> 
-                                                <i class="fa fa-heart active" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="item-card__content-wrap">
-                                                <div class="item-card__content-behavior-rating">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                </div> 
-                                                <span class="sold-quantity">1 đã bán</span>
-                                            </div> 
-                                        </div>
-                                        <div class="item-card__content-brand">
-                                            <h5 class="item-card__content-brand-item">Ohui</h5>
-                                            <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
-                                        </div>
-                                    </div>  
-                                    <span class="item-card__discount">
-                                        <div class="item-card__discount-quantity">50%</div>
-                                        <div class="item-card__discount-text">Giảm</div>
-                                    </span>
-                                    <div class="item-card__cart" onclick="purchaseMessage('item-card__11')">
-                                        <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span class="item-card__cart-underline"></span>
-                                    </div>
-                                
-                                </a>
-                            </div>
-    
-                            <div class="grid__col grid__col-8-12">
+                            <div class="grid__col grid__col-8-12 s-grid__col-12-12">
                                 <div class="grid__row">
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-card__12" class="item-card mt-20">
+                                    <div class="grid__col grid__col-4-12  s-grid__col-6-12">
+                                        <a href="#" id="item-cart__2" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-11.png" alt="">
                                             </div>
@@ -1283,16 +1414,7 @@
                                                     <div class="item-card__discount-quantity">50%</div>
                                                     <div class="item-card__discount-text">Giảm</div>
                                                 </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-card__12')">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart">
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__2')">
                                                     <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                     <span class="item-card__cart-underline"></span>
@@ -1300,8 +1422,8 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__13" class="item-card mt-20">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__3" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-11.png" alt="">
                                             </div>
@@ -1334,7 +1456,7 @@
                                                     <div class="item-card__discount-quantity">50%</div>
                                                     <div class="item-card__discount-text">Giảm</div>
                                                 </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-card__13')">
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__3')">
                                                     <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                     <span class="item-card__cart-underline"></span>
@@ -1342,55 +1464,8 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__14" class="item-card mt-20">
-                                            <div class="item-card__img">
-                                                <img src="./access/img/product-11.png" alt="">
-                                            </div>
-                                            <div class="item-card__content">
-                                                <div class="item-card__content-name">Set Phấn Nước Whoo GongJinhYang Mi Luxury Golden CushionYang Mi Luxury Golden Cushion</div>
-                                                <div class="item-card__content-price">
-                                                    <span class="item-card__content-price-old">1.500.000đ</span>
-                                                    <span class="item-card__content-price-new ml-15">1.150.000đ</span>
-                                                </div>
-                                                <div class="item-card__content-behavior">
-                                                    <div class="item-card__content-behavior-heart"> 
-                                                        <i class="fa fa-heart active" aria-hidden="true"></i>
-                                                    </div>
-                                                    <div class="item-card__content-wrap">
-                                                        <div class="item-card__content-behavior-rating">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                        </div> 
-                                                        <span class="sold-quantity">1 đã bán</span>
-                                                    </div> 
-                                                </div>
-                                                <div class="item-card__content-brand">
-                                                    <h5 class="item-card__content-brand-item">Ohui</h5>
-                                                    <h5 class="item-card__content-brand-item">Hàn quốc</h5>  
-                                                </div>
-                                                <div class="item-card__cart">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-card__14')">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                            </div>  
-                                        </a>
-                                    </div>
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__15" class="item-card mt-20">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__4" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-17.png" alt="">
                                             </div>
@@ -1423,16 +1498,7 @@
                                                     <div class="item-card__discount-quantity">50%</div>
                                                     <div class="item-card__discount-text">Giảm</div>
                                                 </span>
-                                                <div class="item-card__cart">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__15')">
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__4')">
                                                     <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                     <span class="item-card__cart-underline"></span>
@@ -1441,8 +1507,8 @@
                                         </a>
                                     </div>
                                     
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__16" class="item-card mt-20">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__5" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-18.png" alt="">
                                             </div>
@@ -1475,16 +1541,7 @@
                                                     <div class="item-card__discount-quantity">50%</div>
                                                     <div class="item-card__discount-text">Giảm</div>
                                                 </span>
-                                                <div class="item-card__cart">
-                                                    <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
-                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                    <span class="item-card__cart-underline"></span>
-                                                </div>
-                                                <span class="item-card__discount">
-                                                    <div class="item-card__discount-quantity">50%</div>
-                                                    <div class="item-card__discount-text">Giảm</div>
-                                                </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__16')">
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__5')">
                                                     <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                     <span class="item-card__cart-underline"></span>
@@ -1492,8 +1549,8 @@
                                             </div>  
                                         </a>
                                     </div>
-                                    <div class="grid__col grid__col-4-12">
-                                        <a href="#" id="item-cart__7" class="item-card mt-20">
+                                    <div class="grid__col grid__col-4-12 s-grid__col-6-12">
+                                        <a href="#" id="item-cart__6" class="item-card mt-20">
                                             <div class="item-card__img">
                                                 <img src="./access/img/product-19.png" alt="">
                                             </div>
@@ -1526,7 +1583,7 @@
                                                     <div class="item-card__discount-quantity">50%</div>
                                                     <div class="item-card__discount-text">Giảm</div>
                                                 </span>
-                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__17')">
+                                                <div class="item-card__cart" onclick="purchaseMessage('item-cart__6')">
                                                     <i class="fa fa-shopping-cart item-card__cart--1" aria-hidden="true"></i>
                                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                                     <span class="item-card__cart-underline"></span>
@@ -1566,7 +1623,7 @@
                                 <a href="#" class="wrap__content-item"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
                             </div>
                         </div>
-                        <div class="wrap-content">
+                        <div class="wrap-content wrap-content--link">
                             <h5 class="wrap-content__name">Vào cửa hàng trên ứng dụng myohui</h5>
                             <div class="wrap-content__links-img">
                                 <a href="#" class="wrap-content__item-qr">
@@ -1646,7 +1703,18 @@
 
             // Auto next slide
             var currentTranslate = 0;
-            const slides = document.getElementsByClassName('hero__banner-carosel-slide');
+            var currentWidth = window.innerWidth;
+            if ( currentWidth < 1024) {
+                // tablet and mobile
+                const slideTablet = document.getElementById('hero__banner-carosel--tablet')
+                slideTablet.style.display = 'flex';
+                var slides = document.getElementsByClassName('hero__banner-carosel-slide');
+                console.log(slides.length)
+            } else if (currentWidth > 1023) {
+                // Pc 
+                var slides = document.querySelectorAll('.hero__banner-carosel-slides > .hero__banner-carosel-slide');
+                console.log(slides.length)
+            }
             const maxTransform = (slides.length)*100;
             var timer = 0;
           
