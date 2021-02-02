@@ -63,6 +63,10 @@
         width: 50%;
     }
 
+    .s-grid__col-8-12 {
+        width: 66.66667%
+    }
+
     .hero__banner-fixed {
         display: none;
     }
@@ -159,3 +163,9 @@
     }
 }
 
+/* Small phone  */
+@media (max-width: 730px) {
+    .ss-grid__col-6-12 {
+        width: 50%;
+    }
+}

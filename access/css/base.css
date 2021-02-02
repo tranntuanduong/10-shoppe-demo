@@ -32,6 +32,7 @@ html {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .grid__full-width {
@@ -80,6 +81,10 @@ html {
 
 .grid__col-10-12 {
     width: 83.33333%
+}
+
+.grid__col-12-12 {
+    width: 100%;
 }
 
 .ml-8 {
