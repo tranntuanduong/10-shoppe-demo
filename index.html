@@ -1777,24 +1777,33 @@
 
            
             function purchaseMessage (id) {
-                const cartItem = document.getElementById(id);
-                const alertCart = document.getElementById('alertCart');
+                console.log('cc') 
+                var cartItem = document.getElementById(id);
+                var alertCart = document.getElementById('alertCart');
+                var isPreventDefault = true;
                 if (alertCart) {
-                    const toast = document.createElement('div');
-                    cartItem.onclick = function (event) {
-                        event.preventDefault(0);
-                        console.log('add to cart: ' + id) 
-                        toast.classList.add('alert-add-to-cart');
-                        toast.innerHTML = '<h4>Sản phẩm đã được thêm vào giỏ hàng</h4>';
-                        alertCart.appendChild(toast);
-                    }
+                    const toast = document.createElement('div');           
+                    console.log('add to cart: ' + id) 
+                    toast.classList.add('alert-add-to-cart');
+                    toast.innerHTML = '<h4>Sản phẩm đã được thêm vào giỏ hàng</h4>';
+                    alertCart.appendChild(toast);
+
                     // remove alert auto 
                     const autoRemove = setTimeout (function() {
                         alertCart.removeChild(toast);
+                        isPreventDefault = false;
                     }, 2000)
+
+                    // Prevent click only click in btn cart
+                    cartItem.onclick = function (event) {
+                        if (isPreventDefault) {
+                            event.preventDefault();
+                        }      
+                    }
+                    
                 }
             }
-
+           
             // Chat session 
             const chatSessionE = document.getElementById('chat-session__content');
             const chatBtnE = document.getElementById('chat-btn');
