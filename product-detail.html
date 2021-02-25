@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product - Detail</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./access/font/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./access/css/normalize.css">
+
+        <link rel="stylesheet" href="./access/css/base.css">
+        <link rel="stylesheet" href="./access/css/csses-small.css">
+
+        <link rel="stylesheet" href="./access/css/main.css">
+
+        <link rel="stylesheet" href="./access/css/responsive.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- Header  -->
+            <header class="header">
+                <div class="grid">
+                    <div class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item nav--mobile-hidden navbar__item--has-qr item--saperate">
+                                Vào cửa hàng trên ứng dụng MyOhui
+                                <div class="header__qr">
+                                    <img class="header__qr-code" src="./access/img/qr_code.png" alt="">
+                                    <div class="heder__qr-app">
+                                        <a class="heder__qr-link"><img src="./access/img/google-play.png" alt=""></a>
+                                        <a class="heder__qr-link"><img src="./access/img/app-store.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar__item item--saperate">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a class="navbar__item-link" href="tel:0965866851">0965866851</a>
+                            </li>
+                         
+                            <li class="navbar__item">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a class="navbar__item-link" href="">ohuivina.com@gmail.com</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar__list nav--mobile-hidden">
+                            <li class="navbar__item navbar__item--has-notify">
+                                <i class="fa fa-bell" aria-hidden="true"></i>
+                                <a class="navbar__item-link" href="">Tin tức</a>
+                                <div class="navbar__notify">
+                                    <h3 class="navbar__notify-heading">Tin tức mới nhất</h3>
+                                    <ul class="navbar__notify-list">
+                                        <li class="navbar__notify-item navbar__notify-item--viewed">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-1.png" alt="">
+                                            </div>
+                                            <div class="navbar__notify-item-content">
+                                                <h4>SIÊU PHẨM MỚI: KEM NỀN DẠNG THỎI OHUI ULTIMATE COVER STICK FOUNDATION</h4>
+                                                <h5>Để cảm ơn sự ủng hộ và yêu thích của khách hàng đối với chúng tôi, chương trình Khách Hàng Thân Thiết đã được ra đời.</h5>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__notify-item navbar__notify-item--viewed">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-2.png" alt="">
+                                            </div>
+                                            <div class="navbar__notify-item-content">
+                                                <h4>SIÊU PHẨM MỚI: KEM NỀN DẠNG THỎI OHUI ULTIMATE COVER STICK FOUNDATION</h4>
+                                                <h5>Để cảm ơn sự ủng hộ và yêu thích của khách hàng đối với chúng tôi, chương trình Khách Hàng Thân Thiết đã được ra đời.</h5>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__notify-item navbar__notify-item--viewed">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-3.png" alt="">
+                                            </div>
+                                            <div class="navbar__notify-item-content">
+                                                <h4>SIÊU PHẨM MỚI: KEM NỀN DẠNG THỎI OHUI ULTIMATE COVER STICK FOUNDATION</h4>
+                                                <h5>Để cảm ơn sự ủng hộ và yêu thích của khách hàng đối với chúng tôi, chương trình Khách Hàng Thân Thiết đã được ra đời.</h5>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__notify-item">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-1.png" alt="">
+                                            </div>
+                                            <div class="navbar__notify-item-content">
+                                                <h4>Chương trình khách hàng thân thiết</h4>
+                                                <h5>Để cảm ơn sự ủng hộ và yêu thích của khách hàng đối với chúng tôi, chương trình Khách Hàng Thân Thiết đã được ra đời.</h5>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__notify-item ">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-2.png" alt="">
+                                            </div>  
+                                            <div class="navbar__notify-item-content">
+                                                <h4>Khởi Đầu làn da khỏe đẹp</h4>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__notify-item navbar__notify-item--viewed">
+                                            <div class="navbar__notify-item-img">
+                                                <img src="./access/img/notify-3.png" alt="">
+                                            </div>
+                                            <div class="navbar__notify-item-content">
+                                                <h4>Tặng ngay combo 5 gói mặt nạ thải đọc Sum37</h4>
+                                                <h5>Để cảm ơn sự ủng hộ và yêu thích của khách hàng đối với chúng tôi.</h5>
+                                            </div>
+                                        </li>                                                             
+                                    </ul>
+                                    <div class="navbar__notify-footer">
+                                        <a href="#">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar__item">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <a class="navbar__item-link" href="">Liên hệ</a>
+                            </li>
+                            <li class="navbar__item navbar__item--bold item--saperate">
+                                <a class="navbar__item-link" href="">Đăng ký</a>
+                            </li>
+                            <li class="navbar__item navbar__item--bold">
+                                <a class="navbar__item-link" href="">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-with-search">
+                        <a href="http://127.0.0.1:5500/index.html" class="header-with-search__logo">
+                            <img src="./access/img/logo.png" alt="">
+                        </a>
+                        <div class="header-with-search__search">
+                          
+                            <form class="header-with-search__search-form" action="">
+                                <input type="text" class="header-with-search__search-input" placeholder="Tìm kiếm...">
+                                <div class="header-with-search__search-history">
+                                    <h4 class="header-with-search__search-history-heading">
+                                        Lịch sử tìm kiếm
+                                    </h4>
+                                    <ul class="header-with-search__search-history-content">
+                                        <li>Mỹ phẩm</li>
+                                        <li>Ohui</li>
+                                        <li>Sửa rửa mặt</li>
+                                    </ul>
+                                </div>
+                            </form>
+                            
+       
+                            <div class="header-with-search__search-selected">
+                                Cửa hàng <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <ul class="header-with-search__search-selected-list">
+                                    <li class="selected">Cửa hàng <i class="fa fa-check" aria-hidden="true"></i></li>
+                                    <li>Ohui<i class="fa fa-check" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="header-with-search__search-btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div class="header-with-search__cart">
+                            <i class="header-with-search__cart-cart fa fa-cart-plus" aria-hidden="true"></i>
+                            <span class="header-with-search__quantity">3</span>         
+                            <!-- NO cart -->
+                            <!-- <div class="cart__content cart__content--no-cart">
+                                <img src="./access/img/no-cart.png" alt="">
+                                <p>Chưa có sản phẩm</p> 
+                            </div> -->
+                            <!-- Has cart  -->
+                            <div class="cart__content cart__content--has-cart">
+                                <h3 class="cart__content-heading">Sản Phẩm Đã Thêm</h3>
+                                <ul class="cart-list">
+                                    <li class="cart-item">
+                                        <img src="./access/img/cart-item-1.png" alt="" class="cart-item__img">
+                                        <div class="cart-item__name"> Set sữa rửa mặt  Ohui Prime Gel Cleanser</div>
+                                        <div class="cart-item__pay">
+                                            <div class="cart-item__pay-detail">
+                                                <span class="cart-item__pay-detail-price">1.035.000đ</span>
+                                                <span class="cart-item__pay-detail-mutiply">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="cart-item__pay-detail-quantity">1</span>
+                                            </div>
+                                            <div class="cart-item__pay-remove">Xóa</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./access/img/cart-item-3.png" alt="" class="cart-item__img">
+                                        <div class="cart-item__name">Bộ kem đặc trị vùng mắt Ohui Age Recovery Wrinkle Cut Serum.</div>
+                                        <div class="cart-item__pay">
+                                            <div class="cart-item__pay-detail">
+                                                <span class="cart-item__pay-detail-price">1.035.000đ</span>
+                                                <span class="cart-item__pay-detail-mutiply">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="cart-item__pay-detail-quantity">1</span>
+                                            </div>
+                                            <div class="cart-item__pay-remove">Xóa</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./access/img/cart-item-2.png" alt="" class="cart-item__img">
+                                        <div class="cart-item__name">Set phấn phủ Ohui Ultimate Brightening Varnishing Pact</div>
+                                        <div class="cart-item__pay">
+                                            <div class="cart-item__pay-detail">
+                                                <span class="cart-item__pay-detail-price">1.035.000đ</span>
+                                                <span class="cart-item__pay-detail-mutiply">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="cart-item__pay-detail-quantity">1</span>
+                                            </div>
+                                            <div class="cart-item__pay-remove">Xóa</div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./access/img/cart-item-3.png" alt="" class="cart-item__img">
+                                        <div class="cart-item__name">Bộ kem đặc trị vùng mắt Ohui Age Recovery Wrinkle Cut Serum.</div>
+                                        <div class="cart-item__pay">
+                                            <div class="cart-item__pay-detail">
+                                                <span class="cart-item__pay-detail-price">1.035.000đ</span>
+                                                <span class="cart-item__pay-detail-mutiply">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="cart-item__pay-detail-quantity">1</span>
+                                            </div>
+                                            <div class="cart-item__pay-remove">Xóa</div>
+                                        </div>
+                                    </li>                     
+                                </ul>
+                                <div class="cart__content-check-out">
+                                    <div class="check-out__content">
+                                        <p class="check-out__content-title">Tổng tiền:</p>
+                                        <p class="check-out__content-quantity">4.185.000đ</p>
+                                    </div>
+                                    <div class="check-out__content">
+                                        <p class="check-out__content-title">Ví tích điểm:</p>
+                                        <p class="check-out__content-quantity">4.185.000 điểm</p>
+                                    </div>
+                                    <div class="btn cart__content-btn">Xem Giỏ Hàng</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <img class="header-with-search__avatar--mobile" src="./access/img/avatar.png" alt="">
+                        
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="product">
+                    <!-- Product briefing  -->
+                    <ul class="bread-crums">
+                        <li class="bread-crums__item">
+                            <a href="http://127.0.0.1:5500/index.html">
+                                Trang chủ 
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="bread-crums__item">
+                            <a href="http://127.0.0.1:5500/product-list.html">
+                                Whoo Chống Nắng
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="bread-crums__item">
+                            Set kem chống nắng Whoo Seol radiant white tone up sunscreen SPF50+/PA++++ 50 ML
+                        </li>    
+                    </ul>
+
+                    <!-- Product briefing  -->
+                    <div class="product-briefing">
+                        <div class="grid__row">
+                            <div class="grid__col grid__col-5-12">
+                                <div class="briefing__carousel">
+                                    <div class="briefing__carousel-large-img"
+                                         style="background-image: url(./access/img/product-detail-1.png)">
+                                    </div>
+                                    <ul class="briefing__carousel-small-imgs">
+                                        <li style="background-image: url(./access/img/product-detail-1.png)"></li>
+                                        <li class="briefing__carousel-small-img--active" style="background-image: url(./access/img/product-detail-1.png)"></li>
+                                        <li style="background-image: url(./access/img/product-detail-1.png)"></li>
+                                        <li style="background-image: url(./access/img/product-detail-1.png)"></li>
+                                        <li style="background-image: url(./access/img/product-detail-1.png)"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid__col grid__col-7-12">
+                                <div class="product-briefing__content">
+                                    <!-- title  -->
+                                    <h3 class="briefing-content__name">
+                                        <span class="briefing-content__name--favourite">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            Yêu Thích
+                                        </span>
+                                        Set kem chống nắng Whoo Seol radiant white tone up sunscreen SPF50+/PA++++ 50 ML
+                                    </h3>     
+                                    
+                                    <!-- rating  -->
+                                    <div class="briefing-content__rating">
+                                        <span class="briefing-content__rating-quantity">5</span>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+
+                                    <!-- price  -->
+                                    <div class="briefing-content__price">
+                                        <div class="briefing-content__text">
+                                            <span class="content-price__old">1.250.000đ</span>
+                                            <span class="content-price__current">1.125.000đ</span>
+                                            <span class="content-price__discount">10% GIẢM</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- info  -->
+                                   <div class="briefing-content__info-wrap">
+                                        <div class="grid__row">
+                                            <div class="grid__col grid__col-4-12">
+                                                <p class="briefing-content__info-title">Thông Tin</p>
+                                            </div>
+                                            <div class="grid__col grid__col-8-12">
+                                                <div class="briefing-content__overview-text">
+                                                    <p>SEOL RADIANT WHITE TONE UP SUNSCREEN 
+                                                        SPF50+/PA++++ 50 ML
+                                                    </p>
+                                                    <p>
+                                                        KEM CHỐNG NẮNG BẮT KỊP XU HƯỚNG HIỆN ĐẠI VÀ VÔ CÙNG ƯU VIỆT, KHÔNG HỀ NHỜN DÍNH !
+                                                    </p>
+                                                    <p>
+                                                        Kem chống nắng chính là“ chìa khóa” quyết định việc bạn có sở hữu làn da đẹp hay không.
+                                                    </p>
+                                                </div>
+                                                <a href="#product-details" class="briefing-content__overview-more-info">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="briefing-content__info-wrap">
+                                        <div class="grid__row">
+                                            <div class="grid__col grid__col-4-12">
+                                                <p class="briefing-content__info-title">Số Lượng</p>
+                                            </div>
+                                            <div class="grid__col grid__col-8-12">
+                                                <div class="briefing-content__quantity">
+                                                    <button class="briefing-content__quantity-btn">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </button>
+                                                    <input type="text" class="briefing-content__quantity-input" value="1">
+                                                    <button class="briefing-content__quantity-btn">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="briefing-content__info-wrap">
+                                        <div class="grid__row">
+                                            <div class="grid__col grid__col-4-12">
+                                                <p class="briefing-content__info-title">Đơn Vị</p>
+                                            </div>
+                                            <div class="grid__col grid__col-8-12">
+                                                <p class="briefing-content__info-unit">
+                                                    kg
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- action  -->
+                                    <div class="briefing-content__action">
+                                        <div class="briefing-content__action-btn briefing-content__action-btn--add">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            Thêm Vào Giỏ Hàng
+                                        </div>
+                                        <div class="briefing-content__action-btn briefing-content__action-btn--purchase"> 
+                                            Mua Ngay
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Footer  -->
+            <div class="footer mt-40">
+               <div class="grid top-footer">
+                    <div class="wrap-content">
+                        <h5 class="wrap-content__name">Chăm sóc khách hàng</h5>
+                        <div class="wrap-content__links">
+                            <a href="#" class="wrap__content-item">Trung Tâm Trợ Giúp</a>
+                            <a href="#" class="wrap__content-item">Hướng Dẫn Mua Hàng</a>
+                            <a href="#" class="wrap__content-item">Chính Sách Vận Chuyển</a>
+                        </div>
+                    </div>
+                    <div class="wrap-content">
+                        <h5 class="wrap-content__name">VỀ CHÚNG TÔI</h5>
+                        <div class="wrap-content__links">
+                            <a href="#" class="wrap__content-item">Tuyển Dụng</a>
+                            <a href="#" class="wrap__content-item">Giới Thiệu Về Mỹ Phẩm Ohui - LG Vina</a>
+                            <a href="#" class="wrap__content-item">Điều Khoản Chính Sách</a>
+                        </div>
+                    </div>
+                    <div class="wrap-content">
+                        <h5 class="wrap-content__name">Theo giõi tôi chúng tôi trên</h5>
+                        <div class="wrap-content__links">
+                            <a href="#" class="wrap__content-item"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+                        </div>
+                    </div>
+                    <div class="wrap-content wrap-content--link">
+                        <h5 class="wrap-content__name">Vào cửa hàng trên ứng dụng myohui</h5>
+                        <div class="wrap-content__links-img">
+                            <a href="#" class="wrap-content__item-qr">
+                                <img src="./access/img/qr_code.png" alt="">
+                            </a>
+                            <div href="#" class="wrap-content__item-links">
+                                <a href="#" class="wrap-content__item-appstore">
+                                    <img src="./access/img/app-store.png" alt="">
+                                </a>
+                                <a href="#" class="wrap-content__item-googleplay">
+                                    <img src="./access/img/google-play.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="bottom-footer">
+                   <div class="bottom-footer__content">
+                       <p class="bottom-footer__item footer--saperate">CHÍNH SÁCH BẢO MẬT</p>    
+                       <p class="bottom-footer__item footer--saperate">Quy chế hoạt động</p>
+                       <p class="bottom-footer__item">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</p>
+                   </div>
+                   <div class="bottom-footer__company">
+                        <h4 class="bottom-footer__company-name">Công ty mỹ phẩm Ohui- LGvina</h4>
+                        <p class="bottom-footer__company-address">Chi nhánh: 63 Lê Văn Lương, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                   </div>
+               </div>
+            </div>
+        </div>
+
+        <!-- Btn hotline -->
+        <a href="tel:0389658753" class="btn-hotline">
+           <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+
+        <!-- btn chat-->
+        <div class="chat-wrap">
+            <div id="chat-btn" class="chat-btn">
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                Chat
+            </div>
+            <div id="chat-session__content" class="chat-session">
+                <div class="chat-session__heading">
+                    <p>Chat</p>
+                    <div id="chat-session__close"  class="chat-session__heading-close">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div  class="chat-session__content">
+                    <div class="chat-session__content--logout">
+                        <p>Bạn cần đăng nhập để chat với shop</p>
+                        <div class="btn-login">Đăng nhập ngay</div>
+                    </div>
+                </div>
+                <div class="chat-session__footer">
+                    <input type="text" placeholder="Gửi tin nhắn">
+                    <div class="chat-session__footer-btn">
+                        <div class="chat-session__footer-btn-file">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="chat-session__footer-btn-send">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert add to cart  -->
+        <div id="alertCart">
+            <!-- <h4>Sản phẩm đã được thêm vào giỏ hàng</h4> -->
+        </div>
+    </div>
+
+        <script>
+
+        </script>
+    </body>
+</html>

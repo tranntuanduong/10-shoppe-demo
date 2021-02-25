@@ -75,6 +75,10 @@ html {
     width: 50%;
 }
 
+.grid__col-7-12 {
+    width: 58.33333%;
+}
+
 .grid__col-8-12 {
     width: 66.66667%;
 }
